@@ -21,15 +21,19 @@
 Log in at 
 
 http://localhost:5050/ 
+
 Email address / username: *PGADMIN_DEFAULT_EMAIL* environment variable (default:  admin@example.com)
+
 Password: *PGADMIN_DEFAULT_PASSWORD* environment variable (default: secret)
 
 Quick Links -> Add new server
 * Name: Training
+
 Switch to Connection tab
 * Host name / address: *postgresql*
 * Username: *DB_USERNAME* environment variable (default: postgres)
 * Password: *DB_PASSWORD* environment variable (default: secret)
+
 Click on Save button.
 
 ## Prepare Grafana Dashboard
@@ -37,7 +41,9 @@ Click on Save button.
 Log in at 
 
 http://localhost:3000/ 
+
 email or username: *admin*
+
 password: *GRAFANA_PASSWORD* environment variable (default: secret)
 
 Connections -> Data sources: Add data source button
