@@ -70,3 +70,9 @@ If the data source has been added we can build a dashboard:
 * Transactions
 * Sessions
 * ...
+
+## Trainig Examples
+
+Trainig examples are available in the folder:
+
+*postgres/examples/*
