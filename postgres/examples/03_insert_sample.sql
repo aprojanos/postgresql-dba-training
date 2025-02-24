@@ -1,25 +1,31 @@
+SET search_path = hr,finance,public;
+
 INSERT INTO departments (name, location) VALUES
-('HR', 'London'),
-('IT', 'New York'),
-('Finance', 'Tokyo');
+('HR', 'Budapest'),
+('IT', 'Szeged'),
+('Finance', 'Berlin');
 
 INSERT INTO jobs (title, min_salary, max_salary) VALUES
 ('HR Manager', 80000, 120000),
 ('HR Specialist', 60000, 100000),
-('Software Manager', 100000, 150000),
+('Software Application Manager', 100000, 150000),
 ('Software Engineer', 70000, 120000),
 ('Finance Manager', 120000, 160000),
 ('Finance Analyst', 55000, 110000);
 
 INSERT INTO employees (first_name, last_name, email, hire_date, department_id, job_id, manager_id) VALUES
-('Alice', 'Johnson', 'alice@example.com', '2023-01-10', 1, 1, NULL),
-('Bob', 'Smith', 'bob@example.com', '2022-03-15', 1, 2, 1),
-('Charlie', 'Brown', 'charlie@example.com', '2021-07-20', 2, 3, NULL),
-('Daniel', 'Wilson', 'daniel@example.com', '2020-11-20', 2, 4, 3),
-('Mia', 'Jackson', 'mia@example.com', '2019-08-15', 3, 5, NULL),
-('Olivia', 'Davis', 'olivia@example.com', '2008-01-07', 3, 6, 5),
-('Charlotte', 'Lewis', 'charlotte@example.com', '2024-12-01', 2, 6, 4);
+('Laura', 'Tóth', 'laura@example.com', '2023-01-10', 1, 1, NULL),
+('Tibor', 'Török', 'tibor@example.com', '2022-03-15', 1, 2, 1),
+('István', 'Juhász', 'istvan@example.com', '2021-07-20', 2, 3, NULL),
+('György', 'Farkas', 'gyuri@example.com', '2020-11-20', 2, 4, 3),
+('Ilona', 'Papp', 'ilona@example.com', '2019-08-15', 3, 5, NULL),
+('Bianka', 'Balogh', 'bianka@example.com', '2008-01-07', 3, 6, 5),
+('Renáta', 'Szabó', 'renata@example.com', '2024-12-01', 2, 6, 4);
 
+UPDATE employees SET address = 'Szenthídháza, Bakonymelléki utca 92.' 
+	WHERE employee_id = 1;
+UPDATE employees SET address = 'Hetvenbánya, Alsógyörgyi utca 13.' 
+	WHERE employee_id = 2;
 
 INSERT INTO salaries (employee_id, salary, change_date) VALUES
 (1, 85000, '2025-01-15'),
@@ -48,10 +54,9 @@ INSERT INTO projects (name) VALUES
 ;
 
 INSERT INTO employee_projects (employee_id, project_id) VALUES
-(1, 1), (1, 3), -- Daniel
-(2, 1), (2, 2), -- Bob
-(3, 2), (3, 3), -- Charlie
-(4, 3), -- Daniel
-(5, 4), (5, 3), -- Mia
-(6, 4); -- Olivia
-
+(1, 1), (1, 3), -- Laura
+(2, 1), (2, 2), -- Tibor
+(3, 2), (3, 3), -- Istvan
+(4, 3), -- Gyuri
+(5, 4), (5, 3), -- Ilona
+(6, 4); -- Bianka

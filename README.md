@@ -5,7 +5,7 @@
 
 ## Running containers
 
-* Edit `.env` to customize PostgreSQL, Prometheus and pgAdmin parameters.
+* Edit `.env` to customize PostgreSQL, Prometheus, Grafana and pgAdmin parameters.
 
 * Run `docker compose up -d`
 
