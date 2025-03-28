@@ -15,6 +15,9 @@
 * **prometheus** `:9090` - Prometheus - Open-source systems monitoring and alerting toolkit.
 * **postgresql-exporter** `:9187` - Prometheus exporter for PostgreSQL server metrics.
 * **grafana** `:3000` - Grafana - Query, visualize, alert on, and explore your metrics, logs, and traces wherever they are stored.
+* **zabbix-server** `:8090` - Zabbix Server - The central process of Zabbix software.
+* **zabbix-web** `:10051` - Zabbix Frontend - Web interface to manage resources under monitoring and view monitoring statistics.
+* **zabbix-agent** `:10050` -  Zabbix Agent - Actively monitor local resources and applications
 
 ## pgAdmin
 
